@@ -5,9 +5,14 @@ using namespace std;
 int main()
 {
     int n, s = 0;
+    int i;
     cout<<"Введите число n=";
     cin >> n;
-    s = (1+n) * n / 2; //арифметическая прогрессия
+    while (i<n)
+    {
+        i++;
+        s+=i;
+    }
     cout << s;
     return 0;
 }
